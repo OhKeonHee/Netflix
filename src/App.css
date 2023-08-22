@@ -1,0 +1,230 @@
+.wrapper {
+  background-color: #000;
+  width: 100vw;
+  height: 100%;
+}
+.nav-item {
+  color: #999;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.nav-item:hover {
+  color: #fff;
+  font-weight: bold;
+}
+#icon-search,
+#icon-bell {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  transform: translateY(-2px);
+  margin: 0 5px;
+}
+#icon-bell {
+  margin-right: 15px;
+}
+.banner {
+  width: 100vw;
+  height: 80vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, black, transparent);
+}
+.banner::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 82vh;
+  content: '';
+  background: linear-gradient(to right, black, transparent);
+}
+.banner-info {
+  width: 40%;
+  margin-left: 30px;
+  z-index: 1;
+}
+#banner-play {
+  background-color: #fff;
+  color: #000;
+}
+#banner-info {
+  background-color: #888;
+  border: 1px solid #888;
+}
+.slide {
+  color: #fff;
+  font-weight: bold;
+}
+.slide h3 {
+  font-weight: bold;
+}
+.loader {
+  margin-left: 50%;
+}
+.card-wrapper {
+  transform: scale(0.93);
+  transition: .2s all ease;
+}
+.card-wrapper:hover {
+  transform: scale(1);
+}
+.card-wrapper:hover .card h4,
+.card-wrapper:hover .card-title-background {
+  opacity: 1;
+}
+.card {
+  position: relative;
+  width: 300px !important;
+  height: 450px !important;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 0 !important;
+  background-color: black !important;
+}
+
+.card h4,
+span {
+  color: #fff;
+}
+.card h4 {
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 99;
+  opacity: 0;
+  transition: .2s;
+}
+.card-title-background {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: .2s;
+}
+.overlay {
+  opacity: 0;
+  width: 300px;
+  margin-bottom: 20px;
+}
+.overlay button {
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid white;
+  color: white;
+  margin: 0 5px;
+  margin-bottom: 10px;
+}
+.overlay button > * {
+  transform: translateY(-2px);
+}
+.overlay button:first-child {
+  background-color: white;
+  color: black;
+}
+.overlay .badge {
+  margin: 5px 3px;
+  margin-top: 10px;
+}
+.overlay-info span {
+  margin: 5px;
+}
+.overlay-info span:first-child {
+  color: #64c964;
+  font-weight: bold;
+}
+.card-wrapper:hover .overlay {
+  opacity: 1;
+  padding: 10px;
+  background: rgba(43, 41, 41, 0.9);
+  transition: 0.2s;
+}
+
+.MovieDetail {
+  background-color: #000;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  padding-top: 160px;
+  padding-left: 20px;
+}
+.youtube {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.info-area {
+  width: 50%;
+  margin-top: 200px;
+  margin-left: 50px;
+}
+.MovieDetail .movie-info {
+  display: flex;
+  gap: 30px;
+}
+.movie-info h3 {
+  font-size: 18px;
+}
+.movie-info h3 span {
+  color: #64c964;
+  font-weight: bold;
+  font-size: 18px;
+}
+.MovieDetail .badge {
+  margin: 10px 5px;
+}
+.overview {
+  line-height: 2;
+  color: gray;
+}
+.info-btns {
+  display: flex;
+  gap: 10px;
+  z-index: 99;
+}
+.info-btns button {
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  margin: 10px 0;
+  padding: 10px 20px;
+}
+#icon-play {
+  background-color: red;
+  border: 1px solid red;
+}
+#icon-thumbUp {
+  margin-left: 30px;
+}
+#icon-thumbUp:hover {
+  background-color: #64c964;
+  border: 1px solid #64c964;
+}
+#icon-thumbDown:hover {
+  background-color: #f00;
+  border: 1px solid #f00;
+}
+#icon-thumbUp,
+#icon-thumbDown {
+  border-radius: 50%;
+  font-size: 25px;
+  padding: 0;
+  padding: 0 11px;
+}
+
+.search {
+  background-color: black;
+  padding-top: 80px;
+}
+.search-result {
+  display: flex;
+  flex-wrap: wrap;
+}
